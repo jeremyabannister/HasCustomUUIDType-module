@@ -17,7 +17,7 @@ let package = Package(
         ///
         .package(
             url: "https://github.com/jeremyabannister/DistinctType-module",
-            "0.1.2" ..< "0.2.0"
+            "0.2.0" ..< "0.3.0"
         ),
     ],
     targets: [
@@ -29,7 +29,9 @@ let package = Package(
         ),
         .testTarget(
             name: "HasCustomUUIDType-tests",
-            dependencies: ["HasCustomUUIDType-module"]
+            dependencies: [
+                "HasCustomUUIDType-module",
+            ]
         ),
     ]
 )
